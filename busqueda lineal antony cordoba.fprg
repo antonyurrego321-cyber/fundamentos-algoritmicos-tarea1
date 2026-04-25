@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="busqueda lineal"/>
+        <attribute name="authors" value=""/>
+        <attribute name="about" value="roal n"/>
+        <attribute name="saved" value="2026-04-24 10:41:37 "/>
+        <attribute name="created" value="TWFyaWEgQ2FtaWxhO0xBUFRPUC1KQUNDNEFWSjsyMDI2LTA0LTI0OyIwOTo1NDozOSAiOzMzNjk="/>
+        <attribute name="edited" value="TWFyaWEgQ2FtaWxhO0xBUFRPUC1KQUNDNEFWSjsyMDI2LTA0LTI0OyIxMDo0MTozNyAiOzE7MzQ2Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <write expression="&quot;Busqueda lineal&quot;"/>
+            <declare name="n" type="Real" array="False" size=""/>
+            <declare name="meta" type="Real" array="False" size=""/>
+            <declare name="array" type="Real" array="False" size=""/>
+            <declare name="encontrado" type="Boolean" array="False" size=""/>
+            <declare name="falso" type="Integer" array="False" size=""/>
+            <declare name="i" type="Real" array="False" size=""/>
+            <assign variable="i" expression="0"/>
+            <assign variable="encontrado" expression="falso"/>
+            <while expression="i &lt; n AND encontrado = falso">
+                <while expression="array[i] = meta">
+                    <write expression="&quot;Registro encontrado en posici&#243;n: &quot; &amp; i"/>
+                    <assign variable="encontrado" expression="true"/>
+                </while>
+            </while>
+            <assign variable="i" expression="1+1"/>
+            <write expression="&quot;FIN&quot;"/>
+        </body>
+    </function>
+    <function name="busquedalineal" type="String" variable="busquedalineal">
+        <parameters/>
+        <body>
+            <declare name="busquedalineal" type="String" array="False" size=""/>
+        </body>
+    </function>
+</flowgorithm>
